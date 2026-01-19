@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechWave Podcast</title>
 
-  <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Wave Website</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    
+
+    <link rel="stylesheet" href="Style/style.css">
 </head>
 
-<body>
+<body class="inter-font">
+    <!-- Header - Nav Section -->
+    <header>
+        <section class="nav-container">
+            <nav class="nav-content">
+                <h1 class="nav-title"><span class="text-tech">Tech</span><span class="text-wave-grd">Wave</span></h1>
+                <ul class="nav-menu">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Episodes</a></li>
+                    <li><a href="">Host</a></li>
+                </ul>
+                <button class="btn-grd">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
+            </nav>
+        </section>
+    </header>
+    <!-- Banner Section -->
+    <main>
+        <section class="banner-container">
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">Tech<span class="bro">Wave</span></div>
+            <div class="banner-background">
+                <img src="./assets/hero-bg.png" alt="">
 
-    <nav class="nav-links">
-      <a href="#">About</a>
-      <a href="#">Episodes</a>
-      <a href="#">Host</a>
-    </nav>
 
-    <button class="btn">Subscribe</button>
-  </header>
+            </div>
 
-  <!-- HERO -->
-  <section class="hero">
-  
-    <div class="hero-icon"><img src="./assets/microphone.png" alt=""></div>
+            <div class="banner-logo">
+                <img src="./assets/hero-circle.png" alt="">
+            </div>
+            <div class="banner-logo">
+                <img src="./assets/microphone.png" alt="">
+            </div>
+            <div class="banner-title">
+                <h1 class="text-techwave">TechWave</h1>
+                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <div class="btn-div">
+                    <button class="btn-grd2"><img src="./assets/spotify.png" alt="">Listen on Spotify</button>
+                    <button class="btn-green"><img src="./assets/message.png" alt="">Subscribe</button>
+                    <button class="tooltip">NEW</button>
+                </div>
+            </div>
 
-    <h1>TechWave</h1>
-    <p>Your daily dose of tech insights, productivity tips, and personal growth</p>
 
-    <div class="hero-buttons">
-      <button class="btn">Listen on Spotify</button>
-      <button class="btn outline">Subscribe</button>
-    </div>
-  </section>
 
+        </section>
+    </main>
 
   
 </body>
