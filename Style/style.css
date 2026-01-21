@@ -3,6 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+/* header, main, section, footer {
+    width: 1600px;
+margin: 0 auto;
+
+} */
+
 
 
 .inter-font{
@@ -10,13 +16,13 @@
   }
 header{
     background-color: #1A0B2E;
-    width: 1600px;
+   
     height: 92px;
     margin: 0 auto;
 }
 
 .nav-container{
-    max-width: 1200px;
+    max-width:  1600px;
     margin: 0px auto;
     border: 1px solid #1A0B2E;
 }
@@ -39,6 +45,7 @@ header{
 .nav-menu a{
     text-decoration: none;
     color: white;
+    
 
 }
 
@@ -69,16 +76,21 @@ header{
 /* Banner Relative Section */
 main{
     margin: 0 auto;
-    width: 1600px;
+    width: 100%;
     height: 760px;
     
 }
 
 
 .banner-background{
-    position: relative;
-    height: 100vh;
+        /* position: absolute; */
+    inset: 0;
+    width: 100%
+    
 }
+    /* position: relative;
+    height: 100vh;
+} */
 
 .banner-logo{
     position: absolute;
@@ -188,10 +200,15 @@ main{
 /* About Relative Section */
 
 .about-section{
-    width: 1600px;
-    height: 647px;
+    
+
+
+
+    width: 100%;
+    
     margin: -50px auto;
     background-color: #1A0B2E;
+    padding: 50px 200px 120px 200px;
     
 }
 .about-text{
@@ -218,16 +235,19 @@ main{
 }
 
 .about-score{
+    gap: 80px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0px auto;
+   
 }
 
 .score{
     color: #00ff8828;
     transition: color 0.3s ease;
+    
 }
 
 .score:hover{
@@ -235,11 +255,11 @@ main{
   transform: translateY(-3px); 
 }
 
-hr{
-    max-width: 1200px;
+.hr{
+        max-width:  1200px;;
     margin: 0 auto;
     border: none; 
-    height: 2px; 
+    height: o; 
     background-color: rgba(252, 250, 250, 0.116);
 }
 
@@ -260,21 +280,27 @@ hr{
 /* Why Choose Relative Section */
 
 .choose-section{
-    width: 1600px;
-    height: 1121px;
-    margin: 0px auto;
+    gap: 40px;
+    width: 100%;
+    
+    
     background-color: #230E3D;
-    /* color: white; */
+    
+align-items: center;
+
+padding: 120px 200px 120px 200px;
+
+
     
 }
 
 .choose-title{
-    width: 1200px;
-    height: 59px;
+    
+    /* height: 59px; */
     font-size: 48px;
     font-weight: bold;
     color:white;
-    margin:50px auto;
+    /* margin:50px auto; */
     text-align: center;
     padding-top: 60px;
     padding-bottom: 50px;
@@ -282,7 +308,7 @@ hr{
 
 
 .card-section{
-    width: 1200px;
+    /* width: 1200px; */
     height: 783px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -290,7 +316,7 @@ hr{
     margin: 0 auto;
 }
 
-.card-section p{
+.card-section {
     color: rgba(255, 255, 255, 0.521);
     font-size: 16px;
 }
@@ -345,24 +371,24 @@ hr{
 }
 
 .card-choose2{
-    padding: 50px;
+    padding: 30px;
     border-radius: 40px;
     background-color: #351165;
 }
 
 .card-choose3{
-    padding: 50px;
+    padding: 30px;
     border-radius: 40px;
     background-color: #351165;
 }
 
 .card-choose4{
-    padding: 50px;
+    padding: 30px;
     border-radius: 40px;
     background-color: #351165;
 }
 .card-choose5{
-    padding: 50px;
+    padding: 30px;
     border-radius: 40px;
     background-color: #351165;
 }
@@ -386,15 +412,15 @@ hr{
 /* Features Relative Section */
 
 .features-section{
-    width: 1600px;
-    height: 1276px;
+    /* width: 1600px; */
+    /* height: 1276px; */
     background-color: #1A0B2E;
     margin: 0 auto;
     
 }
 
 .feature-title{
-    width: 1200px;
+    /* width: 1200px; */
     height: 59px;
     margin: 0 auto;
     text-align: center;
@@ -406,18 +432,20 @@ hr{
 }
 
 .featured-container{
-    width: 1200px;
-    height: 440px;
+    /* width: 1200px; */
+    /* height: 440px; */
     margin: 0px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    padding: 120px 200px 120px 200px;
+    
     
 }
 
 .card-feature{
     width: 380px;
-    height: 440px;
+    /* height: 440px; */
     background-color: #250D44;
     border-radius: 20px;
     /* border: 1px solid chartreuse; */
@@ -428,6 +456,7 @@ iframe{
     height: 214px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+  
 }
 
 #card-img{
@@ -444,8 +473,8 @@ iframe{
     margin-left: 24px;
 }
 
-.card-feature>p{
-    width: 332px;
+.card-feature>div{
+    max-width: 100%;
     height: 72px;
     line-height: 24px;
     margin-top: 12px;
@@ -456,7 +485,7 @@ iframe{
 
 /* Meet Relative Section */
 .meet-container{
-    width: 1200px;
+    width: 100%;
     height: 280px;
     margin: 0 auto;
     border-radius: 30px;
@@ -465,7 +494,7 @@ iframe{
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }
 
 
@@ -528,13 +557,23 @@ iframe{
 }
 
 /* footer Relative Section */
-footer{
-    width: 1600px;
-    height: 412px;
-    margin: 0 auto;
-}
 
+    
+
+
+ 
+.footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+}
 .footer-techwave{
+    
+
+
+  /* background-image: url('../assets/footer-wave.png'); */
+
     align-items: center;
     text-align: center;
 }
@@ -542,29 +581,30 @@ footer{
 
 
 /* .footer-image{
+    background-image: url('../assets/footer-wave.png');
 position: absolute;
   bottom: -443.9%;
   left: 50%;
   transform: translate(-50%, -50%);
-} */
+}
 
-
+    .footer{width: 1600px;
+margin: 0 auto;} */
 .footer-image{
-;
 
-  /* bottom: -443.9%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
+
+  background-image: url('../assets/footer-wave.png');
+  /* text-align: center; */
 }
 
 
 
 .footer-techwave{
     /* margin-top: 40px; */
-    /* text-align: center; */
+    text-align: center;
     position: absolute;
-    top: 437%;
-    left: 36%;
+    /* top: 735%;
+    left: 38%; */
    
 }
 
@@ -577,11 +617,11 @@ position: absolute;
     
 }
 
-/* .footer-div{
+.footer-div{
     display: flex;
     align-items: center;
     justify-content: space-around;
-} */
+}
 
 .footer-wave{
     background: linear-gradient( #F7E93F, #FB09B4, #9100F8);
@@ -623,13 +663,31 @@ position: absolute;
 
 
  /* Responsive Code */
-/* @media screen and (max-width:576px) {
-    .nav-content{
-        display: none;
+
+/* @media (max-width: 768px) {
+    header, main, section, footer {
+        width: 100%;
+        padding: 0 10px;
     }
-    
-    .hamburger{
-    margin-right: 10px;
-    display: inline;
-}
-} */
+
+    .nav-content, .nav-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-score {
+        grid-template-columns: 2 ;
+    }
+
+    .card-section {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-container {
+        grid-template-columns: 1fr;
+    }
+
+    .meet-container {
+        flex-direction: column;
+        text-align: center;
+    } */
